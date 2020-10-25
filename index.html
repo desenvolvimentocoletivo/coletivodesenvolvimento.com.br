@@ -25,17 +25,25 @@
       align-items: center;
     }
 
-    .flex-item {
-      max-width: 1000px;
+    header {
       flex: 1 0 auto;
     }
 
-    .wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
+    /* header div {
+      display: block;
+      max-width: 1000px;
+      max-height: 918px;
+      min-width: 375px;
+      min-height: 344px;
+      height: auto;
+    } */
+
+    header img {
+      max-width: 1000px;
+      display: block;
+      max-width: 100%;
+      min-width: 200px;
+      height: auto;
     }
 
     h3 {
@@ -43,6 +51,11 @@
     }
 
     #social-media {
+      flex: 1 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       text-align: center;
     }
 
@@ -65,41 +78,23 @@
       width: 64px;
       height: 64px;
     }
-
-    footer {
-      flex-shrink: 0;
-    }
-
-    footer img {
-      max-width: 1000px;
-      display: block;
-      max-width: 100%;
-      min-width: 200px;
-      height: auto;
-    }
   </style>
 </head>
 
 <body class="main">
-  <div class="flex-item">
-    <div class="wrapper">
-      <div id="social-media">
-        <h2>Veja o nosso conteúdo nas redes sociais!</h2>
-        <div class="social-media-row">
-          <a class="item" href="https://www.instagram.com/coletivodesenvolvimento"><img src="images/icon-instagram.svg"
-              alt="Instagram"></a>
-          <a class="item" href="https://www.facebook.com/coletivodesenvolvimento"><img src="images/icon-facebook.svg"
-              alt="Facebook"></a>
-          <a class="item" href="https://api.whatsapp.com/send?phone=5546999185863"><img src="images/icon-whatsapp.svg"
-              alt="Whatsapp"></a>
-        </div>
-      </div>
+  <header><a href="https://www.coletivodesenvolvimento.com.br"><img src="images/logo.png" alt="Logo"></a></header>
+
+  <div id="social-media">
+    <h2>Veja o nosso conteúdo nas redes sociais!</h2>
+    <div class="social-media-row">
+      <a class="item" href="https://www.instagram.com/coletivodesenvolvimento"><img src="images/icon-instagram.svg"
+          alt="Instagram"></a>
+      <a class="item" href="https://www.facebook.com/coletivodesenvolvimento"><img src="images/icon-facebook.svg"
+          alt="Facebook"></a>
+      <a class="item" href="https://api.whatsapp.com/send?phone=5546999185863"><img src="images/icon-whatsapp.svg"
+          alt="Whatsapp"></a>
     </div>
   </div>
-
-  <footer>
-    <a href="https://www.coletivodesenvolvimento.com.br"><img src="images/footer.png" alt="Rodapé"></a>
-  </footer>
 </body>
 
 </html>
